@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    label 'agent1'
+  }
 
   stages {
 
@@ -20,13 +22,13 @@ pipeline {
       }
     }
 
-    stage('upload artifacts') {
-
-      steps {
-        sh '''
-          curl -v -u admin:admin123 --upload-file todo.zip http://localhost:8081/repositories/todo/todo.zip
-        '''
-      }
-    }
+//     stage('upload artifacts') {
+//
+//       steps {
+//         sh '''
+//           curl -v -u admin:admin123 --upload-file todo.zip http://localhost:8081/repositories/todo/todo.zip
+//         '''
+//       }
+//     }
   }
 }
