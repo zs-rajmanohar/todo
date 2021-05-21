@@ -2,7 +2,7 @@
 
 todoapp (
   COMPONENT           : 'todo',
-   APP_TYPE           :  'nodejs'
+  APP_TYPE           :  'nodejs'
   SKIP_NEXUS_UPLOAD   :  false
 )
 
