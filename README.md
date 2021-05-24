@@ -1,1 +1,1 @@
-new version - 1.1
+new version - 1.2
