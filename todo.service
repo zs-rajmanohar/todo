@@ -10,4 +10,4 @@ ExecStart=/bin/node /root/shell-scipting-task/todoapp/todo/server.js
 Restart=on-failure
 
 [Install]
-WantedBy=multi-user.target"
+WantedBy=multi-user.target
