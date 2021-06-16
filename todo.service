@@ -8,6 +8,7 @@ Environment=SERVER_PORT=8080
 Environment=REDIS_API_ADDRESS=http://127.0.0.1:8080
 ExecStart=/bin/node /root/todo/server.js
 Restart=on-failure
+SyslogIdentifier=todo
 
 [Install]
 WantedBy=multi-user.target
